@@ -27,7 +27,8 @@ const apiKey = "fwnPc2PhHnks40RQO-dd3-DnzrqDWfBH7Q04iQufWII";
 const apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${count}`;
 
 function displayPhotos() {
-  totalImages += photoArray.length;
+  imageLoaded = 0;
+  totalImages = photoArray.length;
   // create <a></a> to link to unplash api
   photoArray.forEach((photo) => {
     const item = document.createElement("a");
