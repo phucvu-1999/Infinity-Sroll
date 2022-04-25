@@ -73,3 +73,5 @@ window.addEventListener("scroll", () => {
 });
 
 getPhotos();
+
+console.log("Hello world");
